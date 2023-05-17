@@ -9,6 +9,7 @@ public class Main {
         user1.setAge(-17);
         user1.setPassword("");
         user1.printTotalAmountOfSpentMoney();
+        user1.addDiscount(1);
 
         double result1 = Calculator.add(8.32, 10.5);
         System.out.println("Результат додавання: " + result1);
