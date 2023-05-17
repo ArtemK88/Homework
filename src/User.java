@@ -62,7 +62,6 @@ public class User {
     public void printTotalAmountOfSpentMoney() {
         System.out.println("Загальна сума витрачених грошей " + amountSpendMoney );
     }
-
     public void addDiscount(int percent) {
         System.out.println("Знижка - " + amountSpendMoney * percent / 100);
     }
