@@ -10,6 +10,17 @@ public class Main {
         user1.setPassword("");
         user1.printTotalAmountOfSpentMoney();
 
+        double result1 = Calculator.add(8.32, 10.5);
+        System.out.println("Результат додавання: " + result1);
+
+        double result2 = Calculator.subtract(4, 2);
+        System.out.println("Результат віднімання: " + result2);
+
+        double result3 = Calculator.multiply(6, 2);
+        System.out.println("Результат множення: " + result3);
+
+        double result4 = Calculator.divide(10.5, 0);
+        System.out.println("Результат ділення: " + result4);
 
 
     }
