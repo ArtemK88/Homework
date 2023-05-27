@@ -17,6 +17,6 @@ package Homework7;
      }
      @Override
      public void paint(){
-         System.out.println("Circle : " + color);
+         System.out.println("Circle : " + getColor());
      }
  }

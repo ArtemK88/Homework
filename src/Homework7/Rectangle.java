@@ -18,6 +18,6 @@ public class Rectangle extends Shape{
     }
     @Override
     public void paint() {
-        System.out.println("Rectangle : " + color);
+        System.out.println("Rectangle : " + getColor());
     }
 }

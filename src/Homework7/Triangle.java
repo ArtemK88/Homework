@@ -23,6 +23,6 @@ public class Triangle extends Shape {
     }
     @Override
     public void paint() {
-        System.out.println("Triangle : " + super.color);
+        System.out.println("Triangle : " + getColor());
     }
 }
