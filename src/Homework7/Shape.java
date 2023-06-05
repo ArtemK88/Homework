@@ -2,21 +2,21 @@ package Homework7;
 
 import java.util.Objects;
 
-abstract class Shape {
-    private String color;
+import static java.awt.Color.red;
 
-    public Shape(String color){
+abstract class Shape {
+    private Color color;
+
+    public Shape(Color color){
         this.color =color;
     }
     public abstract double calculateArea();
-
     public abstract double calculatePerimeter();
-
     public abstract void paint();
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
-    public String getColor(){
+    public Color getColor(){
         return color;
     }
     @Override
@@ -40,9 +40,9 @@ abstract class Shape {
     class ShapeMain{
         public static void main(String[] args) {
             Shape[] shapes = new Shape[3];
-            shapes[0] = new Circle("Red", 1.5);
-            shapes[1] = new Rectangle("Blue", 4.0, 6.0);
-            shapes[2] = new Triangle("Green", 3.0, 4.0, 5.0);
+            shapes[0] = new Circle(Color.RED, 1.5);
+            shapes[1] = new Rectangle(Color.BLUE, 4.0, 6.0);
+            shapes[2] = new Triangle(Color.GREEN, 3.0, 4.0, 5.0);
 
             for (Shape shape : shapes) {
                 shape.paint();
@@ -51,9 +51,10 @@ abstract class Shape {
                 System.out.println();
                 shapes.equals(shape);
 
+
             }
-            Shape shape1 = new Circle("Red", 5.0);
-            Shape shape2 = new Circle("Black", 2.0);
+            Shape shape1 = new Circle(Color.GREEN, 5.0);
+            Shape shape2 = new Circle(Color.BLUE, 2.0);
             System.out.println("Shape1 equals Shape2: " + shape1.equals(shape2));
             System.out.println(shape2.toString());
             System.out.println(shape1.hashCode());
